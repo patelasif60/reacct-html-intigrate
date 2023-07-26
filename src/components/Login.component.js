@@ -57,7 +57,7 @@ const LoginComponent = () =>{
                                 <div className="row justify-content-center align-items-center my-4">
                                     <input type="submit" value="Login" className="gradient-button btn btn-warning text-white py-2 rounded-3 col-sm-8 col-10" />
                                 </div>
-                                <div className="my-5 text-center mild-text"> Don't have an account? <a href="#top" className="hover-underline">Sign Up</a>
+                                <div className="my-5 text-center mild-text"> Don't have an account? <a href="/register" className="hover-underline">Sign Up</a>
                                 </div>
                             </form>
                         </div>
