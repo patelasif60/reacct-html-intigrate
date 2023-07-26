@@ -1,12 +1,13 @@
 import React from 'react';
-import CommonCss from '../layouts/app.layout';
 import RegisterComponent from '../components/Register.component';
+import { CommonCss,CommonJs } from '../layouts/app.layout';
 
 const Register = () => {
     return (
         <div>
         <CommonCss />
         <RegisterComponent />
+        <CommonJs />
       </div>
     );
   };
