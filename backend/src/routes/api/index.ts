@@ -18,6 +18,7 @@ class ApiRoute {
     this.router.use('/users',userRoute.router);
     this.router.get('/', (req,res) => { res.send("In api route");});
     this.router.post('/register',(req, res) => this.controller.register(req, res));
+    this.router.post('/login',(req, res) => this.controller.login(req, res));
   }
 }
 

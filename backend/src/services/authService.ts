@@ -13,4 +13,8 @@ export class AuthService {
     const users = await this.authRepository.register(data);
     return users;
   }
+  public async login(data : Params){
+    const users = await this.authRepository.login(data);
+    return users;
+  }
 }

@@ -19,4 +19,13 @@ export class AuthController {
             res.status(500).json({ error: error});
         }
     }
+    public async login(req: Request, res: Response){
+        try {
+            const data = req.body as Params;
+            const users = await this.authService.login(data);
+            res.status(200).json(users);
+        } catch (error) {
+            res.status(500).json({ error: error});
+        }
+    }
 }

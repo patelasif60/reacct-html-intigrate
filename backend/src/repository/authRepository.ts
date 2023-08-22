@@ -17,4 +17,14 @@ export class AuthRepository {
         });
         return users;
     }
+    public async login(data: Params){
+        
+        const users = User.findOne({
+            where: {
+              mobile: data.mobile,
+            }
+          })
+          
+        return users;
+    }
 }
